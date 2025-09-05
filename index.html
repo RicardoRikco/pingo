@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bingo Loco</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- This script allows the browser to understand and run TSX/JSX code directly -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -49,10 +51,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-900 text-white">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Changed type to "text/babel" and added data-type="module" to enable transpilation -->
+    <script type="text/babel" data-type="module" src="/index.tsx"></script>
   </body>
 </html>
