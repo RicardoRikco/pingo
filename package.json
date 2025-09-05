@@ -1,0 +1,17 @@
+{
+  "name": "bingo-loco",
+  "version": "1.0.0",
+  "description": "Bingo Loco Game",
+  "private": true,
+  "dependencies": {
+    "@google/genai": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@vercel/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "^5.0.0"
+  }
+}
